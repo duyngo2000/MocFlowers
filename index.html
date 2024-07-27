@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- gg font Mulish -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- gg font IBM -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="top-bar d-none d-lg-block">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex align-items-center gap-2">
+                <a class="sosial" href="#">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17 2V6H15C14.31 6 14 6.81 14 7.5V10H17V14H14V22H10V14H7V10H10V6C10 4.93913 10.4214 3.92172 11.1716 3.17157C11.9217 2.42143 12.9391 2 14 2H17Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+                <span class="line"></span>
+                <a class="sosial" href="#">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z"
+                      fill="white"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="top-bar_nav d-flex justify-content-end gap-2">
+                <a class="text-white text-decoration-none" href="#"
+                  ><span>Blog</span></a
+                >
+                <span class="line"></span>
+                <a class="text-white text-decoration-none" href="#"
+                  ><span>Giới thiệu</span></a
+                >
+                <span class="line"></span>
+                <a
+                  class="text-white text-decoration-none d-flex gap-2"
+                  href="#"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 4C13.0609 4 14.0783 4.42143 14.8284 5.17157C15.5786 5.92172 16 6.93913 16 8C16 9.06087 15.5786 10.0783 14.8284 10.8284C14.0783 11.5786 13.0609 12 12 12C10.9391 12 9.92172 11.5786 9.17157 10.8284C8.42143 10.0783 8 9.06087 8 8C8 6.93913 8.42143 5.92172 9.17157 5.17157C9.92172 4.42143 10.9391 4 12 4ZM12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"
+                      fill="white"
+                    />
+                  </svg>
+                  <span>Đăng nhập</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-8 col-lg-6">
+              <div class="d-flex align-items-center">
+                <div class="logo">
+                  <a href="#">
+                    <img src="./images/LogoAndSlogan.png" alt="Mộc Flowers" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 col-lg-6">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="search d-none d-lg-block">
+                  <input
+                    id="search-product"
+                    type="text"
+                    placeholder="Tìm kiếm sản phẩm"
+                  />
+                  <button id="submit-product" type="submit">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L19.75 18.25C20.1642 18.6642 20.1642 19.3358 19.75 19.75C19.3358 20.1642 18.6642 20.1642 18.25 19.75L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
+                        fill="#172B4D"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div class="cart">
+                  <span class="bag">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8H9C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8H17C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6H9C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM19 6H17C17 5.34339 16.8707 4.69321 16.6194 4.08658C16.3681 3.47995 15.9998 2.92876 15.5355 2.46447C15.0712 2.00017 14.52 1.63188 13.9134 1.3806C13.3068 1.12933 12.6566 1 12 1C10.6739 1 9.40215 1.52678 8.46447 2.46447C7.52678 3.40215 7 4.67392 7 6H5C3.89 6 3 6.89 3 8V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V8C21 6.89 20.1 6 19 6Z"
+                        fill="#D3D7DE"
+                      />
+                    </svg>
+                  </span>
+                  <span class="quantity">2</span>
+                </div>
+                <div class="bars d-flex d-lg-none">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bar">
+        <div class="container">
+          <div class="row d-lg-none py-4">
+            <div class="col-7 col-lg-6">
+              <div class="d-flex align-items-center">
+                <div class="logo">
+                  <a href="#">
+                    <img
+                      class="w-100 h-100"
+                      src="./images/LogoAndSlogan.png"
+                      alt="Mộc Flowers"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 col-lg-6">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="search">
+                  <svg
+                    class="icon-search-svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L19.75 18.25C20.1642 18.6642 20.1642 19.3358 19.75 19.75C19.3358 20.1642 18.6642 20.1642 18.25 19.75L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
+                      fill="#172B4D"
+                    />
+                  </svg>
+                  <i
+                    class="fa-solid fa-magnifying-glass-minus icon-search-fa"
+                  ></i>
+                </div>
+                <div class="cart">
+                  <span class="bag">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 13C10.6739 13 9.40215 12.4732 8.46447 11.5355C7.52678 10.5979 7 9.32608 7 8H9C9 8.79565 9.31607 9.55871 9.87868 10.1213C10.4413 10.6839 11.2044 11 12 11C12.7956 11 13.5587 10.6839 14.1213 10.1213C14.6839 9.55871 15 8.79565 15 8H17C17 9.32608 16.4732 10.5979 15.5355 11.5355C14.5979 12.4732 13.3261 13 12 13ZM12 3C12.7956 3 13.5587 3.31607 14.1213 3.87868C14.6839 4.44129 15 5.20435 15 6H9C9 5.20435 9.31607 4.44129 9.87868 3.87868C10.4413 3.31607 11.2044 3 12 3ZM19 6H17C17 5.34339 16.8707 4.69321 16.6194 4.08658C16.3681 3.47995 15.9998 2.92876 15.5355 2.46447C15.0712 2.00017 14.52 1.63188 13.9134 1.3806C13.3068 1.12933 12.6566 1 12 1C10.6739 1 9.40215 1.52678 8.46447 2.46447C7.52678 3.40215 7 4.67392 7 6H5C3.89 6 3 6.89 3 8V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V8C21 6.89 20.1 6 19 6Z"
+                        fill="#D3D7DE"
+                      />
+                    </svg>
+                  </span>
+                  <span class="quantity">2</span>
+                </div>
+                <div class="bars d-flex d-lg-none">
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="search-info">
+              <div class="input-search">
+                <input
+                  id="search-product"
+                  type="text"
+                  placeholder="Tìm kiếm sản phẩm"
+                />
+                <button id="submit-product" type="submit">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.5 3C11.2239 3 12.8772 3.68482 14.0962 4.90381C15.3152 6.12279 16 7.77609 16 9.5C16 11.11 15.41 12.59 14.44 13.73L14.71 14H15.5L19.75 18.25C20.1642 18.6642 20.1642 19.3358 19.75 19.75C19.3358 20.1642 18.6642 20.1642 18.25 19.75L14 15.5V14.71L13.73 14.44C12.59 15.41 11.11 16 9.5 16C7.77609 16 6.12279 15.3152 4.90381 14.0962C3.68482 12.8772 3 11.2239 3 9.5C3 7.77609 3.68482 6.12279 4.90381 4.90381C6.12279 3.68482 7.77609 3 9.5 3ZM9.5 5C7 5 5 7 5 9.5C5 12 7 14 9.5 14C12 14 14 12 14 9.5C14 7 12 5 9.5 5Z"
+                      fill="#172B4D"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <ul class="d-flex flex-column flex-lg-row m-0 gap-3 gap-lg-5">
+              <li>
+                <a href="#"><span>Trang chủ</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Lan hồ điệp</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Chủ đề theo mùa</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Sinh nhật</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Chúc mừng</span></a>
+              </li>
+              <li>
+                <a href="#"><span>Chia buồn</span></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_57_111)">
+                      <path
+                        d="M14.981 10.1936L18.7445 5.6936C19.0245 5.35879 18.9945 4.84414 18.6775 4.54411C18.3605 4.24408 17.8765 4.27227 17.5965 4.60708L13.833 9.10706C13.553 9.44187 13.583 9.95651 13.9 10.2565C14.217 10.5566 14.7009 10.5284 14.981 10.1936Z"
+                        fill="#FF9D00"
+                      />
+                      <path
+                        d="M16.4479 17.3962L21.8955 18.5835C22.3354 18.6794 22.7611 18.3987 22.8463 17.9565C22.9315 17.5143 22.6438 17.0781 22.2039 16.9823L16.7563 15.7949C16.3163 15.699 15.8906 15.9798 15.8054 16.4219C15.7203 16.8641 16.0079 17.3003 16.4479 17.3962Z"
+                        fill="#FF9D00"
+                      />
+                      <path
+                        d="M16.21 13.6881L21.6343 12.3767C22.0718 12.2709 22.3502 11.8284 22.2562 11.3883C22.1622 10.9481 21.7313 10.677 21.2938 10.7828L15.8695 12.0942C15.4321 12.2 15.1537 12.6425 15.2477 13.0826C15.3417 13.5228 15.7726 13.7938 16.21 13.6881Z"
+                        fill="#FF9D00"
+                      />
+                      <path
+                        d="M5.51123 14.0348L8.20781 18.9999H11.3284L7.46498 11.8806L5.51123 14.0348Z"
+                        fill="#FF9D00"
+                      />
+                      <path
+                        d="M14.4907 19C15.2474 19 15.73 18.1919 15.371 17.5257L11.1881 9.76191C10.8609 9.15453 10.0314 9.05316 9.56755 9.56387L8.57422 10.6575L13.1024 19H14.4907Z"
+                        fill="#FF9D00"
+                      />
+                      <path
+                        d="M2.51897 17.3276C1.93542 17.9701 2.39127 18.9999 3.25921 18.9999H6.43047L4.39871 15.2581L2.51897 17.3276Z"
+                        fill="#FF9D00"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_57_111">
+                        <rect
+                          width="22"
+                          height="15"
+                          fill="white"
+                          transform="translate(1 4)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span>KHUYẾN MÃI</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="section-hero" id="slide-hero">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="slide-item w-100 h-100">
+                <a href="#">
+                  <div
+                    class="slide-text w-100 position-absolute start-0 top-50 translate-middle-y text-start"
+                  >
+                    <div class="container">
+                      <div class="slide-content">
+                        <h1 class="heading-slide">Trao gửi yêu thương</h1>
+                        <span
+                          >Điện hoa quốc tế & toàn quốc. Mộc Flowers giao hoa
+                          miễn phí trong vòng 2h.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-image w-100 h-100">
+                    <img
+                      src="./images/Hero-slide-1.png"
+                      alt="Trao gửi yêu thương"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item w-100 h-100">
+                <a href="#">
+                  <div
+                    class="slide-text w-100 position-absolute start-0 top-50 translate-middle-y text-start"
+                  >
+                    <div class="container">
+                      <div class="slide-content">
+                        <h1 class="heading-slide">Trao gửi yêu thương</h1>
+                        <span
+                          >Điện hoa quốc tế & toàn quốc. Mộc Flowers giao hoa
+                          miễn phí trong vòng 2h.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-image w-100 h-100">
+                    <img
+                      src="./images/Hero-slide-1.png"
+                      alt="Trao gửi yêu thương"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-item w-100 h-100">
+                <a href="#">
+                  <div
+                    class="slide-text w-100 position-absolute start-0 top-50 translate-middle-y text-start"
+                  >
+                    <div class="container">
+                      <div class="slide-content">
+                        <h1 class="heading-slide">Trao gửi yêu thương</h1>
+                        <span
+                          >Điện hoa quốc tế & toàn quốc. Mộc Flowers giao hoa
+                          miễn phí trong vòng 2h.</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slide-image w-100 h-100">
+                    <img
+                      src="./images/Hero-slide-1.png"
+                      alt="Trao gửi yêu thương"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="section-products section-gap">
+        <div class="container">
+          <div class="heading">
+            <h1 class="heading-title">Sản phẩm của chúng tôi</h1>
+            <p class="heading-text">
+              Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa, Mộc
+              Flowers chúng tôi luôn cố gắng để tạo ra những sản phẩm tốt nhất,
+              đa dạng nhất phục vụ cho mọi nhu cầu của khách hàng.
+            </p>
+          </div>
+          <div>
+            <div class="row bs-gutter-2">
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/BoHoa.png"
+                    class="card-img-top"
+                    alt="Bó hoa"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Bó hoa</p>
+                    <a class="card-href" href="#">
+                      <span>Xem ngay</span>
+                      <i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/KeHoa.png"
+                    class="card-img-top"
+                    alt="Kệ hoa"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Kệ hoa</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay</span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/GioHoa.png"
+                    class="card-img-top"
+                    alt="Giỏ hoa"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Giỏ hoa</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay</span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/HoaCuoi.png"
+                    class="card-img-top"
+                    alt="Hoa cuới"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Hoa cuới</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay</span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/HopHoa.png"
+                    class="card-img-top"
+                    alt="Hộp hoa"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Hộp hoa</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay</span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/BinhHoa.png"
+                    class="card-img-top"
+                    alt="Bình hoa"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Bình hoa</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay</span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/LanHoDiep.png"
+                    class="card-img-top"
+                    alt="Lan hồ điệp"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Lan hồ điệp</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay</span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3">
+                <div class="card">
+                  <img
+                    src="./images/LangHoa.png"
+                    class="card-img-top"
+                    alt="Lãng hoa"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">Lãng hoa</p>
+                    <a class="card-href" href="#"
+                      ><span>Xem ngay </span
+                      ><i class="fa-solid fa-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-reason section-top-gap" id="slide-reason">
+        <div class="container">
+          <div class="heading">
+            <h1 class="heading-title">Lý do bạn nên chọn Mộc Flowers</h1>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slide-item">
+                  <div class="item-medal">
+                    <img
+                      src="./images/UyTinhHangDau.png"
+                      alt="Uy tín hàng đầu"
+                    />
+                  </div>
+                  <p class="item-title">Uy tín hàng đầu</p>
+                  <p class="item-content">
+                    Với nhiều năm kinh nghiệm phục vụ trong ngành điện hoa, Mộc
+                    Flowers hiểu mức độ quan trọng trong công việc của mình là
+                    truyền tải đúng và đủ thông điệp của người tặng đến người
+                    nhận. Vì thế chúng tôi cam kết 100% sự hài lòng của khách
+                    hàng với dịch vụ điện hoa của chúng tôi.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-item">
+                  <div class="item-medal">
+                    <img
+                      src="./images/ChatLuongTuyetVoi.png"
+                      alt="Chất lượng tuyệt vời"
+                    />
+                  </div>
+                  <p class="item-title">Chất lượng tuyệt vời</p>
+                  <p class="item-content">
+                    Luôn cam kết đặt chất lượng hoa luôn tươi mới lên hàng đầu
+                    giao cho khách. Các mẫu hoa luôn được cắm đủ số lượng và
+                    giống kiểu dáng đã đặt.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-item">
+                  <div class="item-medal">
+                    <img
+                      src="./images/ChungNhanSanPham.png"
+                      alt="Chứng nhận sản phẩm"
+                    />
+                  </div>
+                  <p class="item-title">Chứng nhận sản phẩm</p>
+                  <p class="item-content">
+                    <span>
+                      Sảm phẩm của chúng tôi tự hào được chứng nhận chất. Với
+                      các loại hoa hoa dạng được nhập khẩu đảm bảo chất lượng
+                      sản phẩm.
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slide-item">
+                  <div class="item-medal">
+                    <img
+                      src="./images/ChungNhanSanPham.png"
+                      alt="Chứng nhận sản phẩm"
+                    />
+                  </div>
+                  <p class="item-title">Chứng nhận sản phẩm</p>
+                  <p class="item-content">
+                    <span>
+                      Sảm phẩm của chúng tôi tự hào được chứng nhận chất. Với
+                      các loại hoa hoa dạng được nhập khẩu đảm bảo chất lượng
+                      sản phẩm.
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-feedback section-gap section-top-gap-2">
+        <div class="container">
+          <div class="heading">
+            <h1 class="heading-title">Khách hàng nói gì về chúng tôi</h1>
+          </div>
+          <div id="slide-feedback">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="ratio ratio-4x3"
+                    src="./images/Feedback-1.png"
+                    alt="Khách hàng nói 1"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="ratio ratio-4x3"
+                    src="./images/Feedback-2.png"
+                    alt="Khách hàng nói 2"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="ratio ratio-4x3"
+                    src="./images/Feedback-3.png"
+                    alt="Khách hàng nói 3"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="ratio ratio-4x3"
+                    src="./images/Feedback-3.png"
+                    alt="Khách hàng nói 3"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section-partner section-bottom-gap-2">
+        <div class="container">
+          <div class="heading">
+            <h1 class="heading-title">Đối tác của chúng tôi</h1>
+          </div>
+          <div id="slide-partner">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/partner-1.png" alt="Đối tác 1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/partner-2.png" alt="Đối tác 2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/partner-3.png" alt="Đối tác 3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/partner-4.png" alt="Đối tác 4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/partner-3.png" alt="Đối tác 5" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-top">
+        <div class="footer-top_nav">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 4H14.8C14.4 2.8 13.3 2 12 2C10.7 2 9.6 2.8 9.2 4H5C3.9 4 3 4.9 3 6V20C3 21.1 3.9 22 5 22H19C20.1 22 21 21.1 21 20V6C21 4.9 20.1 4 19 4ZM12 4C12.5 4 13 4.5 13 5C13 5.5 12.5 6 12 6C11.5 6 11 5.5 11 5C11 4.5 11.5 4 12 4ZM13 18H8C7.5 18 7 17.5 7 17C7 16.5 7.5 16 8 16H13C13.5 16 14 16.5 14 17C14 17.5 13.5 18 13 18ZM16 14H8C7.5 14 7 13.5 7 13C7 12.5 7.5 12 8 12H16C16.5 12 17 12.5 17 13C17 13.5 16.5 14 16 14ZM16 10H8C7.5 10 7 9.5 7 9C7 8.5 7.5 8 8 8H16C16.5 8 17 8.5 17 9C17 9.5 16.5 10 16 10Z"
+              fill="white"
+            />
+          </svg>
+          <span>Hướng dẫn đặt hàng, thanh toán</span>
+        </div>
+        <span class="line"></span>
+        <div class="footer-top_nav">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 1.00003C9.48509 0.994005 7.04525 1.85662 5.093 3.44203L4.53908 2.71123C4.3654 2.48208 4 2.60491 4 2.89245V5.73981C4 5.88911 4.10978 6.01568 4.25757 6.0368L6.83577 6.40511C7.09248 6.44178 7.27165 6.15748 7.12781 5.94171L6.5 5C7.83375 3.98626 9.49422 3.1984 11.162 3.04038C12.8298 2.88236 14.5086 3.1935 16.009 3.93871C17.5094 4.68392 18.7717 5.83355 19.6536 7.25793C20.5355 8.6823 21.0018 10.3248 21 12V12.019C20.9975 14.406 20.0469 16.6942 18.3572 18.3802C16.6676 20.0663 14.3774 21.0121 11.9905 21.0095C9.60355 21.007 7.31537 20.0564 5.62932 18.3668C3.94328 16.6772 2.99748 14.387 3 12C3 11.7348 2.89464 11.4805 2.70711 11.2929C2.51957 11.1054 2.26522 11 2 11C1.73478 11 1.48043 11.1054 1.29289 11.2929C1.10536 11.4805 1 11.7348 1 12C1 14.1756 1.64514 16.3024 2.85383 18.1113C4.06253 19.9202 5.78049 21.3301 7.79048 22.1627C9.80047 22.9953 12.0122 23.2131 14.146 22.7887C16.2798 22.3642 18.2398 21.3166 19.7782 19.7782C21.3166 18.2398 22.3642 16.2798 22.7886 14.146C23.2131 12.0122 22.9952 9.8005 22.1627 7.79051C21.3301 5.78053 19.9202 4.06256 18.1113 2.85387C16.3023 1.64517 14.1756 1.00003 12 1.00003Z"
+              fill="white"
+            />
+            <path
+              d="M16.947 16.9525C18.0927 15.808 18.8062 14.3017 18.9659 12.6902C19.1256 11.0787 18.7215 9.46163 17.8227 8.11458C16.9238 6.76753 15.5857 5.77381 14.0363 5.30273C12.4869 4.83164 10.8221 4.91233 9.32556 5.53105C7.829 6.14977 6.59326 7.26824 5.82887 8.6959C5.06449 10.1236 4.81875 11.7721 5.13352 13.3606C5.4483 14.9492 6.30411 16.3794 7.55516 17.4077C8.8062 18.436 10.3751 18.9987 11.9945 19C12.914 19.0007 13.8247 18.8203 14.6744 18.469C15.5242 18.1176 16.2964 17.6023 16.947 16.9525ZM10.1695 15.5C9.72767 15.5 9.3695 15.1418 9.3695 14.7V14.55C9.3695 14.1082 9.72767 13.75 10.1695 13.75H12.8695V12.875H10.2445C10.0124 12.875 9.78988 12.7828 9.62578 12.6187C9.46169 12.4546 9.3695 12.2321 9.3695 12V9.375C9.3695 9.14293 9.46169 8.92037 9.62578 8.75628C9.78988 8.59219 10.0124 8.5 10.2445 8.5H11.1195V8.425C11.1195 7.98317 11.4777 7.625 11.9195 7.625H12.0695C12.5113 7.625 12.8695 7.98317 12.8695 8.425V8.5H13.8195C14.2613 8.5 14.6195 8.85817 14.6195 9.3V9.45C14.6195 9.89183 14.2613 10.25 13.8195 10.25H11.1195V11.125H13.7445C13.9766 11.125 14.1991 11.2172 14.3632 11.3813C14.5273 11.5454 14.6195 11.7679 14.6195 12V14.625C14.6195 14.8571 14.5273 15.0796 14.3632 15.2437C14.1991 15.4078 13.9766 15.5 13.7445 15.5H12.8695V15.575C12.8695 16.0168 12.5113 16.375 12.0695 16.375H11.9195C11.4777 16.375 11.1195 16.0168 11.1195 15.575V15.5H10.1695Z"
+              fill="white"
+            />
+          </svg>
+          <span>Quy định đổi trả, hoàn tiền</span>
+        </div>
+        <span class="line"></span>
+        <div class="footer-top_nav">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6 7C6 7.55228 6.44772 8 7 8H17C17.5523 8 18 7.55228 18 7C18 6.44772 17.5523 6 17 6H7C6.44771 6 6 6.44772 6 7ZM6 10C6 10.5523 6.44772 11 7 11H17C17.5523 11 18 10.5523 18 10C18 9.44772 17.5523 9 17 9H7C6.44771 9 6 9.44772 6 10ZM6 13C6 13.5523 6.44772 14 7 14H17C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12H7C6.44771 12 6 12.4477 6 13ZM2 4C2 3.46957 2.21071 2.96086 2.58579 2.58579C2.96086 2.21071 3.46957 2 4 2H20C20.5304 2 21.0391 2.21071 21.4142 2.58579C21.7893 2.96086 22 3.46957 22 4V16C22 16.5304 21.7893 17.0391 21.4142 17.4142C21.0391 17.7893 20.5304 18 20 18H6L2.85355 21.1464C2.53857 21.4614 2 21.2383 2 20.7929V4Z"
+              fill="white"
+            />
+          </svg>
+          <span>Câu hỏi thường gặp</span>
+        </div>
+        <span class="line"></span>
+        <div class="footer-top_nav">
+          <svg
+            width="20"
+            height="17"
+            viewBox="0 0 20 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.05875 10.5877H18.823C19.4701 10.5877 19.9995 10.0583 19.9995 9.41124V7.05839C19.9995 6.41135 19.4701 5.88196 18.823 5.88196H7.05875C6.41172 5.88196 5.88232 6.41135 5.88232 7.05839V9.41124C5.88232 10.0583 6.41172 10.5877 7.05875 10.5877Z"
+              fill="white"
+            />
+            <path
+              d="M7.05875 16.4696H18.823C19.4701 16.4696 19.9995 15.9402 19.9995 15.2932V12.9403C19.9995 12.2933 19.4701 11.7639 18.823 11.7639H7.05875C6.41172 11.7639 5.88232 12.2933 5.88232 12.9403V15.2932C5.88232 15.9402 6.41172 16.4696 7.05875 16.4696Z"
+              fill="white"
+            />
+            <path
+              d="M5.88232 1.17643V3.52928C5.88232 4.17632 6.41172 4.70571 7.05875 4.70571H18.823C19.4701 4.70571 19.9995 4.17632 19.9995 3.52928V1.17643C19.9995 0.529392 19.4701 0 18.823 0H7.05875C6.41172 0 5.88232 0.529392 5.88232 1.17643Z"
+              fill="white"
+            />
+            <path
+              d="M1.17692 10.5888H3.52977C4.17681 10.5888 4.7062 10.0594 4.7062 9.41234V7.05948C4.7062 6.41245 4.17681 5.88306 3.52977 5.88306H1.17692C0.529881 5.88306 0.000488281 6.41245 0.000488281 7.05948V9.41234C0.000488281 10.0594 0.529881 10.5888 1.17692 10.5888Z"
+              fill="white"
+            />
+            <path
+              d="M1.17643 4.70571H3.52928C4.17632 4.70571 4.70571 4.17632 4.70571 3.52928V1.17643C4.70571 0.529392 4.17632 0 3.52928 0H1.17643C0.529392 0 0 0.529392 0 1.17643V3.52928C0 4.17632 0.529392 4.70571 1.17643 4.70571Z"
+              fill="white"
+            />
+            <path
+              d="M3.19231 14.1106L4.54108 12.7619C4.64823 12.6509 4.70752 12.5023 4.70618 12.3481C4.70484 12.1939 4.64297 12.0464 4.53391 11.9373C4.42485 11.8282 4.27732 11.7664 4.1231 11.765C3.96887 11.7637 3.82028 11.823 3.70935 11.9301L2.36057 13.2789L1.0118 11.9301C0.900859 11.823 0.752275 11.7637 0.598047 11.765C0.443819 11.7664 0.296288 11.8282 0.187228 11.9373C0.0781686 12.0464 0.0163069 12.1939 0.0149667 12.3481C0.0136265 12.5023 0.0729151 12.6509 0.180063 12.7619L1.52884 14.1106L0.180063 15.4594C0.123883 15.5137 0.0790711 15.5786 0.0482434 15.6503C0.0174157 15.7221 0.00118918 15.7993 0.00051049 15.8774C-0.0001682 15.9555 0.0147146 16.033 0.0442905 16.1052C0.0738664 16.1775 0.117543 16.2432 0.172772 16.2984C0.228001 16.3537 0.293676 16.3973 0.365966 16.4269C0.438255 16.4565 0.515711 16.4714 0.593813 16.4707C0.671916 16.47 0.749101 16.4538 0.820866 16.423C0.89263 16.3921 0.957536 16.3473 1.0118 16.2911L2.36057 14.9424L3.70935 16.2911C3.82028 16.3983 3.96887 16.4576 4.1231 16.4562C4.27732 16.4549 4.42485 16.393 4.53391 16.284C4.64297 16.1749 4.70484 16.0274 4.70618 15.8732C4.70752 15.7189 4.64823 15.5704 4.54108 15.4594L3.19231 14.1106Z"
+              fill="white"
+            />
+          </svg>
+          <span>Dịch vụ khác</span>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+              <div class="footer-logo footer-title">
+                <img src="./images/LogoAndSlogan-2.png" alt="Mộc flowers" />
+              </div>
+              <div class="footer-text">
+                <span>
+                  Mộc Flowers luôn cam kết đặt chất lượng hoa luôn tươi mới lên
+                  hàng đầu giao cho khách hàng.
+                </span>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+              <h3 class="footer-title">Thông tin shop</h3>
+              <div class="footer-info">
+                <div class="footer-text">
+                  <ul>
+                    <li>
+                      <span>Điện thoại</span>
+                    </li>
+                    <li>
+                      <span>Email</span>
+                    </li>
+                    <li>
+                      <span>Website</span>
+                    </li>
+                    <li>
+                      <span>Giờ mở cửa</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-text">
+                  <ul>
+                    <li>
+                      <a href="#">
+                        <span class="fw-bold">+84 356 435 789</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fw-bold">mocflowers@gmail.com</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fw-bold">mocflowers.com</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <span class="fw-bold">7:00AM - 8:00PM</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 mb-5 mb-lg-0">
+              <h3 class="footer-title">Sản phẩm</h3>
+              <div class="footer-text">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <span>Lan hồ điệp</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Hoa chủ đề theo các mùa</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Hoa sinh nhật</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span>Hoa chúc mừng</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <h3 class="footer-title">Theo dõi chúng tôi</h3>
+              <ul class="list-sosials">
+                <li class="sosial-item">
+                  <a href="#">
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M21 6V10H19C18.31 10 18 10.81 18 11.5V14H21V18H18V26H14V18H11V14H14V10C14 8.93913 14.4214 7.92172 15.1716 7.17157C15.9217 6.42143 16.9391 6 18 6H21Z"
+                        fill="white"
+                      />
+                      <circle
+                        cx="16"
+                        cy="16"
+                        r="15.75"
+                        stroke="#D3D7DE"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="#"
+                    ><svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.8 6H20.2C23.4 6 26 8.6 26 11.8V20.2C26 21.7383 25.3889 23.2135 24.3012 24.3012C23.2135 25.3889 21.7383 26 20.2 26H11.8C8.6 26 6 23.4 6 20.2V11.8C6 10.2617 6.61107 8.78649 7.69878 7.69878C8.78649 6.61107 10.2617 6 11.8 6ZM11.6 8C10.6452 8 9.72955 8.37928 9.05442 9.05442C8.37928 9.72955 8 10.6452 8 11.6V20.4C8 22.39 9.61 24 11.6 24H20.4C21.3548 24 22.2705 23.6207 22.9456 22.9456C23.6207 22.2705 24 21.3548 24 20.4V11.6C24 9.61 22.39 8 20.4 8H11.6ZM21.25 9.5C21.5815 9.5 21.8995 9.6317 22.1339 9.86612C22.3683 10.1005 22.5 10.4185 22.5 10.75C22.5 11.0815 22.3683 11.3995 22.1339 11.6339C21.8995 11.8683 21.5815 12 21.25 12C20.9185 12 20.6005 11.8683 20.3661 11.6339C20.1317 11.3995 20 11.0815 20 10.75C20 10.4185 20.1317 10.1005 20.3661 9.86612C20.6005 9.6317 20.9185 9.5 21.25 9.5ZM16 11C17.3261 11 18.5979 11.5268 19.5355 12.4645C20.4732 13.4021 21 14.6739 21 16C21 17.3261 20.4732 18.5979 19.5355 19.5355C18.5979 20.4732 17.3261 21 16 21C14.6739 21 13.4021 20.4732 12.4645 19.5355C11.5268 18.5979 11 17.3261 11 16C11 14.6739 11.5268 13.4021 12.4645 12.4645C13.4021 11.5268 14.6739 11 16 11ZM16 13C15.2044 13 14.4413 13.3161 13.8787 13.8787C13.3161 14.4413 13 15.2044 13 16C13 16.7956 13.3161 17.5587 13.8787 18.1213C14.4413 18.6839 15.2044 19 16 19C16.7956 19 17.5587 18.6839 18.1213 18.1213C18.6839 17.5587 19 16.7956 19 16C19 15.2044 18.6839 14.4413 18.1213 13.8787C17.5587 13.3161 16.7956 13 16 13Z"
+                        fill="white"
+                      />
+                      <circle
+                        cx="16"
+                        cy="16"
+                        r="15.75"
+                        stroke="#D3D7DE"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li class="sosial-item">
+                  <a href="#"
+                    ><svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle
+                        cx="16"
+                        cy="16"
+                        r="15.75"
+                        stroke="#D3D7DE"
+                        stroke-width="0.5"
+                      />
+                      <path
+                        d="M27 15H25V13H23V15H21V17H23V19H25V17H27V15ZM12 15V17.4H16C15.8 18.4 14.8 20.4 12 20.4C9.6 20.4 7.7 18.4 7.7 16C7.7 13.6 9.6 11.6 12 11.6C13.4 11.6 14.3 12.2 14.8 12.7L16.7 10.9C15.5 9.7 13.9 9 12 9C8.1 9 5 12.1 5 16C5 19.9 8.1 23 12 23C16 23 18.7 20.2 18.7 16.2C18.7 15.7 18.7 15.4 18.6 15H12Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="logo-cert">
+                <a href="#">
+                  <img
+                    src="./images/DaThongBaoBoCongThuong.png"
+                    alt="Đã thông báo bộ công thương"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <div class="copyright text-center text-lg-start">
+                Copyright ©2021, mocflowers.com, All rights reserved
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="copyright text-center text-lg-end">
+                Thiết kế Website bởi Epal Solution
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
