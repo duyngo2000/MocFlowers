@@ -19,6 +19,11 @@ $(document).ready(function () {
                 slidesPerView: 1,
                 spaceBetween: 0,
             },
+            768: {
+                centeredSlides: true,
+                slidesPerView: 2.5,
+                spaceBetween: 0,
+            },
             1024: {
                 centeredSlides: true,
                 slidesPerView: 3,
@@ -37,6 +42,10 @@ $(document).ready(function () {
             320: {
                 slidesPerView: 1,
                 spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
             },
             1024: {
                 slidesPerView: 3,
